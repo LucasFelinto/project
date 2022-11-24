@@ -6,7 +6,7 @@ Class Pessoa {
     public function __construct($dbname, $host, $user, $senha)
     {
         try {
-            $this->pdo = new PDO("mysql:dbname=".$dbname.";host=".$host,$user,$senha);
+            $this->pdo = new PDO("mysql:port=6789;dbname=".$dbname.";host=".$host,$user,$senha);
         } catch (PDOException $e) {
             echo "erro com banco de dados: ".$e->getMessage();
             exit();

@@ -1,9 +1,9 @@
 <?php
-require_once 'Pessoa.php';
-$pessoa = new Pessoa("crudpdo2", "localhost", "root", "123456");
-
-
 header('Access-Control-Allow-Origin: *'); // Permite que o front chame o back 
+require_once 'Pessoa.php';
+$pessoa = new Pessoa("railway", "containers-us-west-133.railway.app", "root", "5qAhjSTdOTr0gaFyxBqZ");
+
+
 
 $nome = $_POST['nome'];
 $telefone = $_POST['telefone'];
